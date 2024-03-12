@@ -3,3 +3,152 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --color-white: #ffffff;
+  --color-white-100: #f9f9f9;
+  --color-grey: #c0c0c0;
+  --color-black: #00030c;
+  --color-button-primary: #167bf7;
+  --background-button: #ffffff00;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+img {
+  width: 100%;
+}
+
+.view {
+  margin: 3rem;
+  text-align: center;
+}
+
+.container {
+  padding: 2rem 0;
+}
+
+.container h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.container img#combo {
+  padding: 2rem 0 5rem;
+}
+
+.container img#notebook {
+  margin-bottom: 3rem;
+}
+
+.container button {
+  display: inline;
+  width: 100%;
+  padding: 1.6rem;
+
+  font-size: 1.6rem;
+  color: var(--color-white);
+  background-color: var(--background-button);
+
+  border: 1px solid var(--color-white);
+  border-radius: 0.8rem;
+
+  margin-bottom: 1.6rem;
+}
+
+.container .button-primary {
+  background-color: var(--color-button-primary);
+  border: none;
+}
+
+.container button:hover {
+  filter: brightness(0.9);
+  cursor: pointer;
+}
+
+.container span {
+  font-size: 1.2rem;
+  color: var(--color-grey);
+}
+
+.container h2 {
+  line-height: 5rem;
+  font-size: 4.8rem;
+  font-weight: bold;
+  padding-bottom: 1.8rem;
+}
+
+.container p {
+  line-height: 2.4rem;
+  color: var(--color-white-100);
+}
+
+.container button#assine-combo {
+  margin: 3rem 0;
+}
+
+#logo {
+  inline-size: fit-content;
+}
+
+footer nav {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+footer nav a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+footer p {
+  font-size: 1.4rem;
+  color: var(--color-grey);
+}
+
+@media (min-width: 78rem) {
+  .view {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 5rem;
+    gap: 7rem;
+  }
+
+  #banner {
+    background: url(./assets/bg-banner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  #telas {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #telas .col-3 {
+    display: flex;
+  }
+
+  footer nav {
+    flex-direction: row;
+  }
+}
