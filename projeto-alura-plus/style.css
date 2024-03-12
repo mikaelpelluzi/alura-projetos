@@ -119,16 +119,22 @@ footer p {
   color: var(--color-grey);
 }
 
-@media (min-width: 78rem) {
+@media (min-width: 768px) {
   .view {
     margin: 0;
     padding: 0;
   }
   .container {
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+  }
+
+  .wrapper {
+    max-width: 120rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    padding: 5rem;
     gap: 7rem;
   }
 
@@ -146,6 +152,11 @@ footer p {
 
   #telas .col-3 {
     display: flex;
+  }
+
+  footer {
+    margin: 0 auto 10rem;
+    max-width: 120rem;
   }
 
   footer nav {
