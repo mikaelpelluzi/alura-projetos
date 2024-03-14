@@ -14,17 +14,48 @@
     <title>Alura Books</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="wrapper">
-          <img src="./assets/menu.svg" alt="icone de menu" />
-          <img src="./assets/logo.svg" alt="logo" />
-        </div>
-        <div class="wrapper">
-          <img src="./assets/like.svg" alt="icone de like" />
-          <img src="./assets/shop.svg" alt="icone de sacola" />
-          <img src="./assets/user.svg" alt="icone de usuario" />
-        </div>
+    <header class="header__page">
+      <div class="menu__wrapper">
+        <input type="checkbox" id="menu" class="menu__wrapper_drop" />
+        <label for="menu">
+          <img
+            class="menu__wrapper__img checked-off"
+            src="./assets/menu.svg"
+            alt="icone de menu"
+          />
+          <img
+            class="menu__wrapper__img checked-on"
+            src="./assets/menu-withe.svg"
+            alt="icone de menu"
+          />
+        </label>
+        <ul class="menu__list">
+          <li class="menu__list-title">
+            <h2></h2>
+            Categorias
+          </li>
+          <li class="menu__list-itens">
+            <a class="menu__list-link" href="">PROGRAMAÇÃO</a>
+          </li>
+          <li class="menu__list-itens">
+            <a class="menu__list-link" href="">FRONT-END</a>
+          </li>
+          <li class="menu__list-itens">
+            <a class="menu__list-link" href="">INFRAESTRUTURA</a>
+          </li>
+          <li class="menu__list-itens">
+            <a class="menu__list-link" href="">BUSINESS</a>
+          </li>
+          <li class="menu__list-itens">
+            <a class="menu__list-link" href="">DESIGN & UX</a>
+          </li>
+        </ul>
+        <img src="./assets/logo.svg" alt="logo" />
+      </div>
+      <div class="header__wrapper">
+        <img src="./assets/like.svg" alt="icone de like" />
+        <img src="./assets/shop.svg" alt="icone de sacola" />
+        <img src="./assets/user.svg" alt="icone de usuario" />
       </div>
     </header>
     <main></main>

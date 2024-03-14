@@ -1,14 +1,22 @@
-:root {
-    --font-padrao: "Poppins", sans-serif;
-    --color-whit: #ffffff;
-    --color-black: #000000;
-    --color-orange: #EB9B00;
-    --color-blue: #002F52
-    --bg-blue-grad: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+@import url(./header.css);
 
+:root {
+  --font-padrao: "Poppins", sans-serif;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-orange: #eb9b00;
+  --color-blue: #002f52;
+  --background-grey: #ebecee;
+  --bg-blue-grad: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 body {
-    font-size: 62.5%;
-    box-sizing: border-box;
+  background-color: var(--background-grey);
+  font-family: var(--font-padrao);
+  font-size: 1.6rem;
 }
