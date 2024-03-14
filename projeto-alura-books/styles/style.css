@@ -1,0 +1,14 @@
+:root {
+    --font-padrao: "Poppins", sans-serif;
+    --color-whit: #ffffff;
+    --color-black: #000000;
+    --color-orange: #EB9B00;
+    --color-blue: #002F52
+    --bg-blue-grad: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+
+}
+
+body {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
