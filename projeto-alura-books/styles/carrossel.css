@@ -9,6 +9,14 @@
   background: var(--color-white);
 }
 
+.swiper {
+  max-width: 80rem;
+}
+
+.swiper-wrapper {
+  gap: 1rem;
+}
+
 .swiper-slide img {
   width: 100%;
 }
@@ -21,4 +29,11 @@
 .swiper-pagination {
   position: initial;
   padding: 1.6rem 0;
+}
+
+@media (min-width: 760px) {
+  .container__carrossel-title {
+    font-size: 2.6rem;
+    padding: 6rem 0 2rem;
+  }
 }

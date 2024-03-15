@@ -47,3 +47,18 @@
   font-weight: 400;
   line-height: 2.1rem;
 }
+
+@media (min-width: 760px) {
+  .container__banner {
+    padding: 8.4rem;
+  }
+
+  .banner-wrapper,
+  #search-book {
+    max-width: 60rem;
+  }
+  .container__banner-title {
+    font-size: 3.6rem;
+    line-height: 5.7rem;
+  }
+}

@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -21,44 +22,83 @@
   <body>
     <header class="header__page">
       <div class="menu__wrapper">
-        <input type="checkbox" id="menu" class="menu__wrapper_drop" />
-        <label for="menu">
-          <img
-            class="menu__wrapper__img checked-off"
-            src="./assets/menu.svg"
-            alt="icone de menu"
-          />
-          <img
-            class="menu__wrapper__img checked-on"
-            src="./assets/menu-withe.svg"
-            alt="icone de menu"
-          />
-        </label>
-        <ul class="menu__list">
-          <li class="menu__list-title">
-            <h2></h2>
-            Categorias
-          </li>
-          <li class="menu__list-itens">
-            <a class="menu__list-link" href="">PROGRAMAÇÃO</a>
-          </li>
-          <li class="menu__list-itens">
-            <a class="menu__list-link" href="">FRONT-END</a>
-          </li>
-          <li class="menu__list-itens">
-            <a class="menu__list-link" href="">INFRAESTRUTURA</a>
-          </li>
-          <li class="menu__list-itens">
-            <a class="menu__list-link" href="">BUSINESS</a>
-          </li>
-          <li class="menu__list-itens">
-            <a class="menu__list-link" href="">DESIGN & UX</a>
-          </li>
-        </ul>
+        <div class="hidden__component">
+          <input type="checkbox" id="menu" class="menu__wrapper_drop" />
+          <label for="menu">
+            <img
+              class="menu__wrapper__img checked-off"
+              src="./assets/menu.svg"
+              alt="icone de menu"
+            />
+          
+            <img
+              class="menu__wrapper__img checked-on"
+              src="./assets/menu-withe.svg"
+              alt="icone de menu"
+            />
+          </label>
+         
+          <ul class="menu__list">
+            <li class="menu__list-title">
+              <h2>
+                Categorias
+              </h2>
+            </li>
+            <li class="menu__list-itens">
+              <a class="menu__list-link" href="">PROGRAMAÇÃO</a>
+            </li>
+            <li class="menu__list-itens">
+              <a class="menu__list-link" href="">FRONT-END</a>
+            </li>
+            <li class="menu__list-itens">
+              <a class="menu__list-link" href="">INFRAESTRUTURA</a>
+            </li>
+            <li class="menu__list-itens">
+              <a class="menu__list-link" href="">BUSINESS</a>
+            </li>
+            <li class="menu__list-itens">
+              <a class="menu__list-link" href="">DESIGN & UX</a>
+            </li>
+          </ul>
+          
+        </div>
         <img src="./assets/logo.svg" alt="logo" />
+        <h2 class="title-header switch-visibility"><span>Alura</span>Books</h2>
+      </div>
+      <div class="menu__wrapper links__pages">
+        <div class="menu__categorias">
+          <input type="checkbox" id="menu-categorias" class="menu__wrapper_drop" />
+            <label for="menu-categorias">
+              <span class="itens__header">
+                CATEGORIAS
+              </span>
+            </label>
+            
+            <ul class="menu__list">
+              <li class="menu__list-itens">
+                <a class="menu__list-link" href="">PROGRAMAÇÃO</a>
+              </li>
+              <li class="menu__list-itens">
+                <a class="menu__list-link" href="">FRONT-END</a>
+              </li>
+              <li class="menu__list-itens">
+                <a class="menu__list-link" href="">INFRAESTRUTURA</a>
+              </li>
+              <li class="menu__list-itens">
+                <a class="menu__list-link" href="">BUSINESS</a>
+              </li>
+              <li class="menu__list-itens">
+                <a class="menu__list-link" href="">DESIGN & UX</a>
+              </li>
+            </ul>
+
+        </div>
+
+        <a class="itens__header" href="#">FAVORITOS</a>
+        <a class="itens__header" href="#">MINHA ESTANTE</a>
       </div>
       <div class="header__wrapper">
-        <img src="./assets/like.svg" alt="icone de like" />
+        <img class="hidden__component" src="./assets/like.svg" alt="icone de like" />
         <img src="./assets/shop.svg" alt="icone de sacola" />
         <img src="./assets/user.svg" alt="icone de usuario" />
       </div>
@@ -109,7 +149,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="section__destaque">
         <div class="container__destaque">
             <div class="wrapper__destaque">
                 <div class="destaque-text">
@@ -161,7 +201,7 @@
       </section>
 
       
-      <section>
+      <section class="section__destaque">
         <div class="container__destaque">
             <div class="wrapper__destaque">
                 <div class="destaque-text">
@@ -202,14 +242,17 @@
 
       <section>
         <div class="container-contato">
-          <h2>Fique por dentro das novidades!</h2>
-          <p>Atualizações de e-books, novos livros, promoções e outros.</p>
-          <input
-          type="email"
-          id="contato"
-          placeholder="Cadastre seu e-mail"
-        />
-          
+          <div class="contato-wrapper">
+            <div class="contato-text">
+              <h2>Fique por dentro das novidades!</h2>
+              <p>Atualizações de e-books, novos livros, promoções e outros.</p>
+            </div>
+            <input
+            type="email"
+            id="contato"
+            placeholder="Cadastre seu e-mail"
+          />
+          </div>
         </div>
       </section>
     </main>
@@ -226,7 +269,12 @@
                 el: '.swiper-pagination',
                 type:'bullets',
             },
-
+            breakpoints: {
+              760: {
+                slidesPerView: 3,
+                spaceBetween: 70
+              },
+            }
         });
     </script>
   </body>
