@@ -2,6 +2,7 @@
 @import url(./banner.css);
 @import url(./carrossel.css);
 @import url(./destaque.css);
+@import url(./topicos.css);
 
 :root {
   --font-padrao: "Poppins", sans-serif;
