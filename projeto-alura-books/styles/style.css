@@ -1,0 +1,34 @@
+@import url(./header.css);
+@import url(./banner.css);
+@import url(./carrossel.css);
+@import url(./destaque.css);
+@import url(./topicos.css);
+@import url(./contato.css);
+@import url(./footer.css);
+
+:root {
+  --font-padrao: "Poppins", sans-serif;
+  --font-secundaria: "Josefin Sans", sans-serif;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-orange: #eb9b00;
+  --color-blue: #002f52;
+  --color-dark-grey: #858585;
+  --background-grey: #ebecee;
+  --bg-blue-grad: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--background-grey);
+  font-family: var(--font-padrao);
+  font-size: 1.6rem;
+}

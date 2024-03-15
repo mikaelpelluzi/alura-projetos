@@ -1,0 +1,64 @@
+.container__banner {
+  background: var(--bg-blue-grad);
+  color: var(--color-white);
+
+  padding: 3.2rem 2.4rem;
+
+  text-align: center;
+}
+
+.banner-wrapper {
+  max-width: 30rem;
+  margin: auto;
+}
+
+.container__banner-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.7rem;
+}
+
+.container__banner-desc {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  margin: 0.8rem 0 2.4rem;
+}
+
+#search-book {
+  background: transparent;
+  border: 1px solid var(--color-white);
+  border-radius: 2.4rem;
+
+  width: 100%;
+  padding: 1.2rem;
+
+  color: var(--color-white);
+}
+
+#search-book::placeholder {
+  background-image: url(../assets/search.svg);
+  background-repeat: no-repeat;
+  background-position-x: 5rem;
+
+  color: var(--color-white);
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+}
+
+@media (min-width: 760px) {
+  .container__banner {
+    padding: 8.4rem;
+  }
+
+  .banner-wrapper,
+  #search-book {
+    max-width: 60rem;
+  }
+  .container__banner-title {
+    font-size: 3.6rem;
+    line-height: 5.7rem;
+  }
+}

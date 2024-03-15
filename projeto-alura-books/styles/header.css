@@ -1,0 +1,143 @@
+.header__page {
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.menu__wrapper__img {
+  padding: 1.6rem;
+  transition: all 0.8s;
+}
+
+.menu__wrapper__img.checked-on {
+  background: var(--bg-blue-grad);
+  display: none;
+}
+
+.menu__wrapper_drop:checked ~ label .menu__wrapper__img.checked-on {
+  display: inline;
+}
+
+.menu__wrapper_drop:checked ~ label .menu__wrapper__img.checked-off {
+  display: none;
+}
+
+.header__page ~ .menu__wrapper {
+  position: relative;
+}
+
+.menu__list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 30rem;
+  border: 1px solid transparent;
+}
+
+.menu__wrapper_drop {
+  display: none;
+}
+
+.menu__wrapper_drop:checked ~ .menu__list {
+  display: block;
+}
+
+.menu__list-title,
+.menu__list-itens {
+  background-color: var(--color-white);
+  padding: 1.6rem;
+}
+
+.menu__list-title {
+  color: var(--color-orange);
+  font-weight: 700;
+  line-height: 2.4rem;
+}
+
+.menu__list-link {
+  background: var(--bg-blue-grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.switch-visibility,
+.links__pages,
+.responsive-desktop {
+  display: none;
+}
+
+@media (min-width: 760px) {
+  .hidden__component {
+    display: none;
+  }
+
+  .header__page {
+    justify-content: space-around;
+    padding: 2rem;
+  }
+
+  .title-header {
+    align-self: flex-end;
+    font-family: var(--font-secundaria);
+    font-size: 3rem;
+    color: var(--color-black);
+  }
+
+  .title-header span {
+    font-weight: 700;
+  }
+
+  .links__pages {
+    display: flex;
+  }
+
+  .links__pages a {
+    color: var(--color-black);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .switch-visibility {
+    display: block;
+  }
+
+  .menu__list-device {
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 30rem;
+  }
+
+  .itens__header {
+    padding: 1rem 2rem;
+  }
+
+  .itens__header:hover,
+  .menu__list-itens:hover {
+    background: var(--bg-blue-grad);
+  }
+  .itens__header:hover,
+  .menu__list-itens:hover > a {
+    -webkit-text-fill-color: initial;
+    color: var(--color-white);
+  }
+}
+
+@media (min-width: 1760px) {
+  .responsive-mobile {
+    display: none;
+  }
+
+  .responsive-desktop {
+    display: flex;
+  }
+}
