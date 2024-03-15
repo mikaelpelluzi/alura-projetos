@@ -125,16 +125,10 @@ footer p {
     padding: 0;
   }
   .container {
-    display: flex;
-    justify-content: center;
-    padding: 5rem;
-  }
-
-  .wrapper {
-    max-width: 120rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    padding: 5rem;
     gap: 7rem;
   }
 
@@ -155,8 +149,7 @@ footer p {
   }
 
   footer {
-    margin: 0 auto 10rem;
-    max-width: 120rem;
+    
   }
 
   footer nav {
