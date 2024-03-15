@@ -70,7 +70,8 @@
 }
 
 .switch-visibility,
-.links__pages {
+.links__pages,
+.responsive-desktop {
   display: none;
 }
 
@@ -128,5 +129,15 @@
   .menu__list-itens:hover > a {
     -webkit-text-fill-color: initial;
     color: var(--color-white);
+  }
+}
+
+@media (min-width: 1760px) {
+  .responsive-mobile {
+    display: none;
+  }
+
+  .responsive-desktop {
+    display: flex;
   }
 }
