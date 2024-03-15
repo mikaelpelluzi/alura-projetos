@@ -1,0 +1,49 @@
+.container-contato {
+  background: var(--color-white);
+  padding: 2.5rem;
+}
+
+.container-contato h2,
+.container-contato p {
+  background: var(--bg-blue-grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.container-contato h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.7rem;
+}
+
+.container-contato p {
+  font-size: 1.6ren;
+  font-weight: 300;
+  line-height: 2.1rem;
+  margin: 1rem 0 2rem;
+}
+
+#contato {
+  font-family: var(--font-padrao);
+  background: transparent;
+  border: 1px solid var(--color-blue);
+  border-radius: 2.4rem;
+
+  width: 100%;
+  padding: 1.6rem 2.4rem;
+
+  color: var(--color-blue);
+}
+
+#contato::placeholder {
+  background-image: url(../assets/email.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 3rem;
+  color: var(--color-blue);
+  text-align: left;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+}

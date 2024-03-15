@@ -3,6 +3,8 @@
 @import url(./carrossel.css);
 @import url(./destaque.css);
 @import url(./topicos.css);
+@import url(./contato.css);
+@import url(./footer.css);
 
 :root {
   --font-padrao: "Poppins", sans-serif;
@@ -10,13 +12,18 @@
   --color-black: #000000;
   --color-orange: #eb9b00;
   --color-blue: #002f52;
+  --color-dark-grey: #858585;
   --background-grey: #ebecee;
   --bg-blue-grad: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
   font-size: 62.5%;
-  box-sizing: border-box;
 }
 
 body {
