@@ -29,9 +29,11 @@ h1 {
 }
 
 .card-content {
-  background: aquamarine;
+  background: #e7e7e7;
   width: 200px;
   height: 240px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .card-content img {
@@ -54,4 +56,8 @@ a {
   text-decoration: none;
   font-size: 1.6rem;
   color: #000000;
+}
+
+a:hover {
+  color: rgba(0, 0, 0, 0.377);
 }
