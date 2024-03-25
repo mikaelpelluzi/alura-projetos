@@ -15,9 +15,13 @@ body {
 }
 
 h1 {
-  margin: 10rem 0;
+  margin: 4rem 0;
   font-size: 5rem;
   text-decoration: underline #66e0f5 wavy;
+}
+
+li {
+  padding-bottom: 1rem;
 }
 
 a {
