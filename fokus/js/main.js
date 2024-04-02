@@ -110,10 +110,6 @@ function zerar() {
     startOuPauseBt.textContent = "Começar"
     startOuPauseBtImg.setAttribute('src', './imagens/play_arrow.png')
     intervaloId = null;
-    
-    if (tempoEmSegundos === 0) {
-        tempoEmSegundos = 1501
-    }
 }
 
 function mostrarTempo() {
