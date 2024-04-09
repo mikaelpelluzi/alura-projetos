@@ -86,7 +86,7 @@ h6 {
   font-style: normal;
   color: var(--color-secondary);
   font-weight: 200;
-  max-width: 46.8rem;
+  max-width: 46rem;
 }
 
 .app__title-strong {
@@ -253,30 +253,6 @@ h6 {
 
 /* fim - toggle */
 
-/* Para Tablets */
-@media (max-width: 1024px) and (min-width: 768px) {
-  .app__section-banner-container {
-    width: 48rem;
-  }
-}
-
-/* Para Celulares */
-@media (max-width: 767px) {
-  .app__section-banner-container {
-    width: 32rem;
-  }
-
-  .app__title {
-    font-size: 2.6rem;
-  }
-
-  .app__card-timer {
-    font-size: 6rem;
-  }
-}
-
-/*continuação do projeto*/
-
 /* dropdown */
 .dropdown-container {
   position: relative;
@@ -319,6 +295,13 @@ h6 {
 }
 
 /* fim - dropdown */
+
+/* Para Tablets */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .app__section-banner-container {
+    width: 48rem;
+  }
+}
 
 /* Para Celulares */
 @media (max-width: 767px) {
