@@ -311,6 +311,29 @@ iframe {
   height: 0px;
 }
 
+.dark-mode {
+  background-color: var(--azul-profundo);
+  color: var(--cinza-medio);
+}
+
+.dark-mode-btn {
+  background-color: var(--azul-medio);
+  color: var(--cinza-medio);
+}
+
+.dark-mode-icons {
+  filter: contrast(0);
+}
+
+.dark-mode-icons-aside {
+  filter: brightness(5);
+}
+
+.dark-mode-input {
+  background-color: var(--azul-profundo);
+  border: 2px solid var(--cinza-medio);
+}
+
 @media (min-width: 834px) {
   body {
     height: 100vh;
