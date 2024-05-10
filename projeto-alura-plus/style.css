@@ -124,7 +124,7 @@ footer p {
     margin: 0;
     padding: 0;
   }
-  .container {
+  .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -146,10 +146,12 @@ footer p {
 
   #telas .col-3 {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   footer {
-    
+    padding: 2rem 4rem;
   }
 
   footer nav {
