@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --font-padrao: "Inter", sans-serif;
+  --font-secundaria: "Josefin Sans", sans-serif;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-orange: #eb9b00;
+  --color-blue: #002f52;
+  --color-dark-grey: #858585;
+  ---color-grey: #ebecee;
+  --bg-blue: #0b0119;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--bg-blue);
+  font-family: var(--font-padrao);
+  font-size: 1.6rem;
+  padding-bottom: 10rem;
+}
+.header__page {
+  width: 600px;
+  margin: 3rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo-img {
+  width: 8rem;
+}
+
+.itens__header {
+  color: var(--color-white);
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 4rem;
+  color: var(--color-orange);
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.sobre__mim {
+  width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+
+.sobre__mim-img {
+  width: 100%;
+}
+
+.sobre__mim-titulo {
+  color: var(--color-white);
+  font-size: 3.5rem;
+  padding-bottom: 3rem;
+}
+
+.sobre__mim-descricao {
+  color: var(---color-grey);
+  font-size: 1.6rem;
+}

@@ -3,30 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/cards.css" />
     <title>Projetos Alura</title>
   </head>
   <body>
-    <h1>Projetos de estudos</h1>
-    <ul>
-      <li>
-        <a href="./projeto-alura-plus/index.html" target="_blank">Alura plus</a>
-      </li>
-      <li>
-        <a href="./projeto-alura-books/" target="_blank">Alura Books</a>
-      </li>
-      <li>
-        <a href="./projeto-alura-books-2/" target="_blank">Alura Books 2</a>
-      </li>
-      <li>
-        <a href="./projeto-alura-desafios/" target="_blank">Alura Desafios</a>
-      </li>
-      <li>
-        <a href="./fokus/index.html" target="_blank">Fokus</a>
-      </li>
-      <li>
-        <a href="./projeto-vidflow/" target="_blank">VidFlow</a>
-      </li>
-    </ul>
+    <header>
+      <div class="header__page">
+        <a class="itens__header" href="#sobre">Sobre Mim</a>
+        <img src="./assets/logo.svg" alt="logo" id="logo-img" />
+        <a class="itens__header" href="#projetos">Projetos</a>
+      </div>
+    </header>
+
+      <div class="sobre__mim" id="sobre">
+        <img class="sobre__mim-img" src="./assets/foto-mikael.jpg" alt="foto de mikael">
+        <div class="sobre__mim-content">
+          <h3 class="sobre__mim-titulo">Mikael Arthur Atala Pelluzi</h3>
+          <p class="sobre__mim-descricao">
+            Entusiasmado por desafios e constante aprendizado, iniciei
+            os estudos na área de Desenvolvimento Web em 2020.
+            Guiado pela transformação contínua, aprimoro minhas
+            habilidades diariamente através de projetos práticos que
+            exigem experiência em diversas tecnologias: <br><br>
+            
+            * Linguagens:JAVASCRIPT, PHP, Phyton<br>
+            * Front-end : HTML, CSS, Next.js, Angular.js<br>
+            * Back-end: Node.js<br>
+            * Banco de dados: SQL<br>
+            * Back-end: Node.js<br><br>
+            
+            Movido pelo desejo de impactar positivamente a vida das
+            pessoas, meu objetivo é desenvolver soluções inovadoras
+            que tragam benefícios concretos para o dia a dia. Acredito
+            que a tecnologia tem o poder de transformar realidades e
+            criar um futuro melhor, e me sinto entusiasmado em fazer
+            parte dessa jornada.
+            Sou um profissional proativo, dedicado e com grande
+            capacidade de aprendizado. Tenho excelente comunicação e
+            trabalho em equipe, buscando sempre colaborar de forma
+            eficaz para o alcance de resultados.
+          </p>
+        </div>
+      </div>
+
+      <h2 id="projetos">Projetos</h2>
+      <div class="container">
+        <div class="cards-projet">
+          <div class="card-content">
+            <img src="./assets/fokus.png" alt="" />
+            <div class="card-text">
+              <h2>Fokus</h2>
+              <a href="./fokus/index.html" target="_blank">acessar</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="cards-projet">
+          <div class="card-content">
+            <img src="./assets/desafios.PNG" alt="" />
+            <div class="card-text">
+              <h2>Desafios Alura</h2>
+              <a href="./projeto-alura-desafios/index.html" target="_blank">acessar</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="cards-projet">
+          <div class="card-content">
+            <img src="./assets/alura-book-1.PNG" alt="" />
+            <div class="card-text">
+              <h2>Alura Book 1</h2>
+              <a href="./projeto-alura-books/index.html" target="_blank">acessar</a>  
+            </div>
+          </div>
+        </div>
+          
+        <div class="cards-projet">
+          <div class="card-content">
+            <img src="./assets/alura-book-2.PNG" alt="" />
+            <div class="card-text">
+              <h2>Alura Book 2</h2>
+              <a href="./projeto-alura-books-2/index.html" target="_blank">acessar</a>
+            </div>
+          </div>
+        </div>
+          
+        <div class="cards-projet">
+          <div class="card-content">
+            <img src="./assets/alura-plus.PNG" alt="" />
+            <div class="card-text">
+              <h2>Alura plus</h2>
+              <a href="./projeto-alura-plus/index.html" target="_blank">acessar</a>
+            </div>
+          </div>
+        </div>
+          
+        <div class="cards-projet">
+          <div class="card-content">
+            <img src="./assets/vidflow.PNG" alt="" />
+            <div class="card-text">
+              <h2>VidFlow</h2>
+              <a href="./projeto-vidflow/index.html" target="_blank">acessar</a>
+            </div>
+          </div>
+        </div>
   </body>
 </html>

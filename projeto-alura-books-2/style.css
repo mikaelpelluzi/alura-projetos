@@ -29,6 +29,7 @@ body {
 .banner {
   background-image: url("./imagens/Banner-1.png");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   height: 278px;
 }
